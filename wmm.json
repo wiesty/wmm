@@ -1,0 +1,12 @@
+{
+    "hints": [
+      "DO NOT CLOSE the installer!",
+      "Select VERSION 1.21!"
+    ],
+    "installurl": [
+      "https://example.com/installer1.exe",
+      "https://example.com/installer2.exe"
+    ],
+    "modsurl": "https://example.com/mods.zip"
+  }
+  
