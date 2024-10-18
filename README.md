@@ -1,4 +1,4 @@
-# 🎮 Wiesty's Mod Installer 🛠️
+# 🎮 Wiesty's Mod Installer 🛠️ <img src="https://img.shields.io/badge/Maintained%3F-no-red.svg"/>
 
 ![Mod Installer](https://i.imgur.com/nvEUQon.png)
 
