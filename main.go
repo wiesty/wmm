@@ -112,7 +112,6 @@ func installMods() {
 	color.Cyan.Println("Installing mods...")
 	mcPath := choosePath(".minecraft")
 
-	// Automatically create a backup before proceeding
 	backupMinecraft(mcPath)
 
 	if _, err := os.Stat(mcPath); os.IsNotExist(err) {
@@ -133,7 +132,6 @@ func installMods() {
 		}
 	}
 
-	// Continue with mod installation after backup and installer
 	downloadAndExtractMods(mcPath, config.ModsURL)
 
 	color.Green.Println("Installation complete!")
@@ -142,6 +140,11 @@ func installMods() {
 
 func downloadAndRunInstaller(url string) {
 	tempPath := filepath.Join(os.TempDir(), "installer.exe")
+
+	if _, err := os.Stat(tempPath); err == nil {
+		os.Remove(tempPath)
+	}
+
 	err := downloadFile(url, tempPath)
 	if err != nil {
 		color.Red.Println("Error downloading installer: %v", err)
@@ -156,9 +159,15 @@ func downloadAndRunInstaller(url string) {
 	fmt.Scanln()
 }
 
+
 func downloadAndExtractMods(mcPath, modsUrl string) {
 	color.Cyan.Println("Downloading mods from ", modsUrl)
 	modsZip := filepath.Join(os.TempDir(), "mods.zip")
+	
+	if _, err := os.Stat(modsZip); err == nil {
+		os.Remove(modsZip)
+	}
+
 	err := downloadFile(modsUrl, modsZip)
 	if err != nil {
 		color.Red.Println("Error downloading mods: %v", err)
@@ -173,6 +182,7 @@ func downloadAndExtractMods(mcPath, modsUrl string) {
 	}
 	color.Green.Println("Mods successfully installed!")
 }
+
 
 func showConfig() {
 	clearTerminal()
