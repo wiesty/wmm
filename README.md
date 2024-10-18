@@ -73,7 +73,7 @@ Here's a sample `wmm.json` file that defines the hints, installer URLs, and mods
 
 ## 🛠️ Installation & Setup
 
-1.  By downloading you agree to the [Disclaimer](https://raw.githubusercontent.com/wiesty/wmm/refs/heads/main/Disclaimer.txt). **Download the `wmm.exe`** from the [Releases](https://github.com/yourusername/wiesty-mod-installer/releases).
+1.  By downloading you agree to the [Disclaimer](https://raw.githubusercontent.com/wiesty/wmm/refs/heads/main/Disclaimer.txt). **Download the `wmm.exe`** from the [Releases](https://github.com/wiesty/wmm/releases/tag/v1).
 2.  **Create your `wmm.json` file** with the structure shown above.
 3.  **Run the Installer**:
     -   Open a terminal or simply double-click `wmm.exe`.
