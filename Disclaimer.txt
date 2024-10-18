@@ -7,6 +7,3 @@ Use at Your Own Risk. You understand and agree that the use of this software is 
 Specific Uses. This software is intended for general use and may not be suitable for all purposes. The author and contributors do not endorse or recommend the use of this software for any specific application.
 Changes. The author reserves the right to modify, suspend, or discontinue the software at any time without notice.
 Legal Compliance. You are responsible for ensuring that your use of the software complies with all applicable laws and regulations.
-Data Privacy for Streaming Services:
-Upon launching the program and connecting to streaming servers, your data privacy will be governed by the IloveRadio Privacy Policy located at https://ilovemusic.de/datenschutz. By using this software to access streaming services, you acknowledge and agree to be bound by the terms of IloveRadio's Privacy Policy.
-By downloading or using this software or/and source, you acknowledge that you have read this disclaimer and agree to its terms.
